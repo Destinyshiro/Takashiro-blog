@@ -120,6 +120,7 @@ h1 {
   width: 100%;
   height: 75px;
   z-index: 333;
+  min-width: ;
 }
 
 .contain {
@@ -155,7 +156,6 @@ h1 {
   margin: 0;
   padding: 0;
   max-height: 25px;
-  min-width: 700px;
 }
 
 .main_list > li {
