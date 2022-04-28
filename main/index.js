@@ -142,7 +142,7 @@ class Slide {
       }
       // 可以继续增加图片
     ];
-    this.imageUrl = '../image/';
+    this.imageUrl = './image/';
 
     // 定时器
     this.timer = null;
