@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "times new roman";
+  src: url(../font/Times\ New\ Roman.ttf);
+}
+
+@font-face {
+  font-family: "logos";
+  src: url(../font/Sukolilo-1.ttf);
+}
+@font-face {
+  font-family: "zhanku";
+  src: url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.eot"); /* IE9 */
+  src: url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+      url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.svg#zhanku")
+      format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.fake>span,.bai>span{
+  font-family: 'zhanku';
+}
+
+html,
+body {
+  margin: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "zhanku";
+}
+a:hover {
+  color: orange;
+}
+.head_container {
+  height: 400px;
+}
+.heads {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 333;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.contain {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* display: none; */
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  z-index: 1;
+  user-select: none;
+  font-family: "logos";
+  color: black;
+  font-size: 30px;
+}
+
+.main_title {
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-height: 25px;
+}
+
+.main_list > li {
+  position: relative;
+  float: left;
+  list-style: none;
+  font-size: 18px;
+  margin: 0 30px;
+}
+
+.main_list > li::after {
+  position: absolute;
+  bottom: 10px;
+  height: 5px;
+  width: 40px;
+  background-color: orange;
+}
+
+.scondary_list {
+  padding: 0;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid whitesmoke;
+  margin-top: 5px;
+  display: none;
+}
+
+.main_list > li > a,
+.scondary_list > li > a {
+  text-decoration: none;
+  color: black;
+}
+.like {
+  width: 66px;
+  height: 25px;
+}
+.like:hover ul {
+  display: block;
+}
+.scondary_list > li {
+  padding: 5px;
+  padding-left: 1px;
+}
+.scondary_list:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid #000000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -8px;
+  left: 23px;
+}
+.main_list > li :hover {
+  font-weight: bold;
+  color: orange;
+}
+
+.login_button {
+  position: fixed;
+  right: 22.5px;
+  top: 22.5px;
+}
+
+.login_button > a > img {
+  width: 30px;
+  height: 30px;
+}
+.page {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/97701908_p0_master1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+.boutme {
+  height: 80%;
+  max-width: 800px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.bai {
+  min-height: 300px;
+  background-color: rgba(242, 242, 242, 0.5);
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h4{
+  font-family: "logos";
+  color: black;
+  font-size: 30px;
+  margin: 0 auto;
+}
+h5{
+  font-size: 18px;
+  font-family: 'zhanku';
+}
+.bai>span{
+  display: inline-block;
+  font-size: 14px;
+    background-color: rgba(255,255,255,0);
+    line-height: 30px;
+}
+.fake{
+  height: 20vh;
+}
+footer{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  font-size: 25px;
+}
+.myhead{
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background-image: url(../image/Takashiro.jpg);
+  background-repeat: no-repeat;
+  pos
+  
+}
