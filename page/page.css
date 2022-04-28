@@ -1,0 +1,239 @@
+@font-face {
+  font-family: "times new roman";
+  src: url(../font/Times\ New\ Roman.ttf);
+}
+
+@font-face {
+  font-family: "logos";
+  src: url(../font/Sukolilo-1.ttf);
+}
+@font-face {
+  font-family: "zhanku";
+  src: url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.eot"); /* IE9 */
+  src: url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+      url("https://cdn.jsdelivr.net/gh/Fog-Forest/cdn@2.0.1/Sakura/fonts/zhanku/zhanku.svg#zhanku")
+      format("svg"); /* iOS 4.1- */
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+html,
+body {
+  margin: 0;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "zhanku";
+}
+a:hover {
+  color: orange;
+}
+.head_container {
+  height: 400px;
+}
+.heads {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 333;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.contain {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* display: none; */
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.logo {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  z-index: 1;
+  user-select: none;
+  font-family: "logos";
+  color: black;
+  font-size: 30px;
+}
+
+.main_title {
+  display: flex;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_list {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-height: 25px;
+}
+
+.main_list > li {
+  position: relative;
+  float: left;
+  list-style: none;
+  font-size: 18px;
+  margin: 0 30px;
+}
+
+.main_list > li::after {
+  position: absolute;
+  bottom: 10px;
+  height: 5px;
+  width: 40px;
+  background-color: orange;
+}
+
+.scondary_list {
+  padding: 0;
+  position: relative;
+  list-style: none;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  border: 2px solid whitesmoke;
+  margin-top: 5px;
+  display: none;
+}
+
+.main_list > li > a,
+.scondary_list > li > a {
+  text-decoration: none;
+  color: black;
+}
+.like {
+  width: 66px;
+  height: 25px;
+}
+.like:hover ul {
+  display: block;
+}
+.scondary_list > li {
+  padding: 5px;
+  padding-left: 1px;
+}
+.scondary_list:after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 8px solid #000000;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -8px;
+  left: 23px;
+}
+.main_list > li :hover {
+  font-weight: bold;
+  color: orange;
+}
+
+.login_button {
+  position: fixed;
+  right: 22.5px;
+  top: 22.5px;
+}
+
+.login_button > a > img {
+  width: 30px;
+  height: 30px;
+}
+
+.page {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/97475626_p0_master1200.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20px;
+}
+.page_container {
+  padding-top: 20px;
+}
+
+.page_home {
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+
+}
+p {
+  margin-bottom: 1.5em;
+  font-size: 14px;
+  line-height: 30px;
+  color: #797979;
+  overflow-wrap: break-word;
+}
+h3 {
+  padding-left: 16px;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #ddd;
+  color: #737373;
+  overflow-wrap: break-word;
+  margin-top: 40px;
+}
+.headpicture {
+  width: 800px;
+  margin: 0 auto;
+
+}
+.headpicture > img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 40px;
+  margin: 5px auto 5px auto;
+  display: block;
+}
+.tophead1 {
+  display: block;
+  height: 80px;
+  padding-top: 10px;
+  border: none;
+  margin-top: 10px;
+}
+b {
+  color: #000000;
+  font-size: 30px;
+}
+.last>ul{
+    padding-left: 3px;
+    list-style: none;
+    color: #737373;
+    letter-spacing: 0.2em;
+}
+.last>ul>li{
+    padding-top: 5px;
+}
