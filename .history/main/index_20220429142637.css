@@ -372,7 +372,7 @@ h1 {
 .post_buttom p {
   font-size: 20px;
   display: -webkit-box;
-  max-height: 67.5px;
+  maxheight: 67.5px;
   overflow: hidden;
   margin-bottom: 1.5em;
   overflow-wrap: break-word;

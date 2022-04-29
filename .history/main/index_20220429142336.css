@@ -372,14 +372,13 @@ h1 {
 .post_buttom p {
   font-size: 20px;
   display: -webkit-box;
-  max-height: 67.5px;
+  height: 67.5px;
   overflow: hidden;
-  margin-bottom: 1.5em;
+
   overflow-wrap: break-word;
   font-family: "zhanku";
   color: #000000a8;
   text-overflow: ellipsis;
-
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   -o-text-overflow: ellipsis;
