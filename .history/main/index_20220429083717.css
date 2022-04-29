@@ -120,7 +120,6 @@ h1 {
   width: 100%;
   height: 75px;
   z-index: 333;
-  min-width: 700px;
 }
 
 .contain {
@@ -402,6 +401,7 @@ h1 {
 .page2_picture > a {
   display: block;
   position: relative;
+  +
   height: 300px;
   overflow: hidden;
   border-radius: 10px 0 0 10px;
